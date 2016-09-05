@@ -134,15 +134,32 @@
             </section>
         </section>
         <!-- Git-->
-        <section>
-          <h3>Intro to Git</h3>
-          <p>Goals of Git Design</p>
-          <ul>
-            <li>Fast -- add to your team and code base quickly</li>
-            <li>Distributed (see slide above) </li>
-            <li>Each commit has a corresponding hash (track changes from everyone)</li>
-            <li>Everyone has a local copy of the history</li>
-          </ul>
+				<section>
+					<section>
+	          <h3>Intro to Git</h3>
+	          <p>Goals of Git Design</p>
+	          <ul>
+	            <li>Fast -- add to your team and code base quickly</li>
+	            <li>Distributed (see slide above) </li>
+	            <li>Each commit has a corresponding hash (track changes from everyone)</li>
+	            <li>Everyone has a local copy of the history</li>
+	          </ul>
+					</section>
+					<section>
+						<h3>How does Git work?</h3>
+						<ul>
+							<li>In math terms, Git is a Uni-directional graph</li>
+							<li>In normal terms, Git is a tree with rules</li>
+							<li>Every node stores three things
+								<ul>
+									<li>A unique identifier</li>
+									<li>The unique identifier of the parent node</li>
+									<li>The changes difference between current state and the parent node</li>
+								</ul>
+							</li>
+							<li>With those three things, we can re-create every state the graph has ever been in!</li>
+						</ul>
+					</section>
         </section>
         <!-- Installation and Setup-->
         <section>
