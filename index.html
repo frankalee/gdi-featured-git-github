@@ -581,6 +581,30 @@ git fetch upstream
           <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
             <div class ="clear"></div></div>
         </section>
+				<section>
+					<section>
+						<h2>Advanced Topics</h2>
+					</section>
+					<section>
+						<h3>Rebase</h3>
+						<ul>
+							<li>Accomplishes the same end effect as a merge</li>
+							<li>Instead of creating a new node with two parents, MOVES YOUR COMMITS to the head of the branch you're rebasing on</li>
+							<li>Benefits: Cleaner graph, better ownership of conflits</li>
+							<li>Drawbacks: Rewrites Git History (can't be used on a remote-pushed branch), can be more time-consuming</li>
+							<li>It's up to your team/project's style</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Rewriting History</h3>
+						<ul>
+							<li>Git will not, by default, let you push commits that don't agree with the remote repository</li>
+							<li>You can override this by using: "git push --force"</li>
+							<li>Some (most) repository admins will have this disabled or restricted to certain users</li>
+							<li>It's generally a bad idea</li>
+						</ul>
+					</section>
+				</section>
 			</div>
   		<footer>
         <div class="copyright">
